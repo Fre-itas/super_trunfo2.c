@@ -24,7 +24,7 @@ int main(){
     printf("Digite seu Estado: \n");
     scanf("%s", Estado1);
 
-    /*printf("Código da Carta: \n");
+    printf("Código da Carta: \n");
     scanf("%s", codigo1);
 
     printf("Digite sua Cidade: \n");
@@ -33,14 +33,14 @@ int main(){
     printf("População: \n");
     scanf("%lu", &Populacao1);
 
-    /*printf("Área em km²: \n");
+    printf("Área em km²: \n");
     scanf("%f", &Area1);
 
     printf("PIB: \n");
     scanf("%f", &PIB1);
 
     printf("Pontos Turísticos: \n");
-    scanf("%i", &pontos_turisticos1);*/
+    scanf("%i", &pontos_turisticos1);
 
 
     //Cálculo de Densidade Populacional, de PIB Per Capita e SUper Poder.  Carta 1
@@ -56,23 +56,23 @@ int main(){
     printf("Digite seu Estado: \n");
     scanf("%s", Estado2);
 
-    /*printf("Código da Carta: \n");
+    printf("Código da Carta: \n");
     scanf("%s", codigo2);
 
     printf("Digite sua Cidade: \n");
-    scanf("%s", Cidade2);*/
+    scanf("%s", Cidade2);
 
     printf("População: \n");
     scanf("%lu", &Populacao2);
 
-    /*printf("Área em km²: \n");
+    printf("Área em km²: \n");
     scanf("%f", &Area2);
 
     printf("PIB: \n");
     scanf("%f", &PIB2);
 
     printf("Pontos Turísticos: \n");
-    scanf("%i", &pontos_turisticos2);*/
+    scanf("%i", &pontos_turisticos2);
 
     //Cálculo de Densidade Populacional, de PIB Per Capita e Super Poder.  Carta 2
     float Densidade_Populacional2 = (float) Populacao2 / Area2;
