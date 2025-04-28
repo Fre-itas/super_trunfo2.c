@@ -28,7 +28,7 @@ int main(){
     scanf("%s", codigo1);
 
     printf("Digite sua Cidade: \n");
-    scanf("%s", Cidade1);*/
+    scanf("%s", Cidade1);
 
     printf("População: \n");
     scanf("%lu", &Populacao1);
