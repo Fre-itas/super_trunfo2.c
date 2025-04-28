@@ -1,1 +1,0 @@
-# super_trunfo2.c
