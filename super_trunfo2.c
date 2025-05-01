@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
 int main(){
     char Estado1[50];
     char codigo1 [3];
@@ -79,8 +80,57 @@ int main(){
     float PIB2_perCapita = (float) PIB2 / Populacao2;
     float Super_Poder2 = (int) Populacao2 + Area2 + PIB2 + pontos_turisticos2 + PIB2_perCapita + Densidade_Populacional2;
 
+    int escolha_atributo;
+  
+
+    printf("*** ATRIBUTOs A SEREM COMPARADO ***\n");
+    printf("1 - Nome do País\n");
+    printf("2 - População\n");
+    printf("3 - Área\n");
+    printf("4 - Densidade Populacional\n");
+    scanf(" %d", &escolha_atributo);
+
+
     
-    printf("*** COMPARAÇÃO DE CARTAS:(ATRIBUTO: POPULAÇÃO) ***\n");
+    switch(escolha_atributo){
+        case 1:
+        printf("Você escolheu o nome do país\n");
+        break;
+        case 2:
+        printf("Você escolheu a População:\n");
+        if (Populacao1 > Populacao2){
+            printf("Carta 1 venceu");
+        } else{
+            printf("Carta dois venceu");
+        }
+        break;
+        case 3: 
+        printf("Você escolheu a Área:\n");
+        if (Area1 > Area2){
+            printf("Carta 1 venceu");
+        } else{
+            printf("Carta dois venceu");
+        }
+        break;
+        case 4:
+        printf("Você escolheu a Densidade Populacional\n");
+        if (Densidade_Populacional < Densidade_Populacional2){
+            printf("Carta 1 venceu");
+        } else{
+            printf("Carta 2 venceu");
+        }
+        break;
+        default:
+        printf("Você não escolheu nenhuma das opções\n");
+        break;
+    }
+
+    return 0;
+}
+
+
+
+/* printf("*** COMPARAÇÃO DE CARTAS:(ATRIBUTO: POPULAÇÃO) ***\n");
 
     printf("População 1: %lu\n", Populacao1);
     printf("População 2: %lu\n", Populacao2);
@@ -91,6 +141,4 @@ int main(){
     else{
         printf("Carta 2 (%s) venceu!\n", Estado2);
     }
-
-    return 0;
-}
+  */
